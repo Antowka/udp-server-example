@@ -16,15 +16,15 @@ class MainTest {
     @Test
     void testUdpServer() throws Exception {
 
-//        new Thread(() -> {
-//            try {
-//                Main.main(new String[]{"7779"});
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
-//        }).start();
-//
-//        Thread.sleep(1500);
+        new Thread(() -> {
+            try {
+                Main.main(new String[]{"7779"});
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }).start();
+
+        Thread.sleep(1500);
 
         demoClientUDP();
     }
