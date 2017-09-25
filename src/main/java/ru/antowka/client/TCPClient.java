@@ -31,6 +31,9 @@ public class TCPClient {
                 out.println(dataItem);
                 out.flush();
 
+                System.out.println("Send to APRS:");
+                System.out.println(dataItem);
+
                 //read response
                 System.out.println("Response on MSG:");
                 System.out.println(in.readLine());
