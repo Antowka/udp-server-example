@@ -11,7 +11,12 @@ public class AprsProcessor {
 
         String[] commands = new String[2];
         commands[0] = "user UC6KFQ pass 22203";
-        commands[1] = data;
+        commands[1] = data
+                .replace("\r", "")
+                .replace("\n", "")
+                .trim()
+                .concat("\n");
+
         TCPClient.sendData("euro.aprs2.net", 14580, commands);
     }
 }

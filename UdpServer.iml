@@ -13,7 +13,6 @@
     <orderEntry type="module-library" exported="" scope="TEST">
       <library name="JUnit5">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/junit-jupiter-api-5.0.0.jar!/" />
           <root url="jar://$MODULE_DIR$/libs/opentest4j-1.0.0.jar!/" />
         </CLASSES>
         <JAVADOC />

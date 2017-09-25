@@ -2,7 +2,6 @@ package ru.antowka;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.net.*;
 import java.nio.charset.StandardCharsets;
 
@@ -34,7 +33,7 @@ class MainTest {
         try {
             clientSocket = new DatagramSocket();
             byte[] sendData = "UC6KFQ>APRS,TCPIP*,qAC,T2GREECE:!5619.08N/04403.27Eyop.Anton\n".getBytes(StandardCharsets.UTF_8);
-            DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("127.0.0.1"), 7778);
+            DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName("antowka.ru"), 7778);
             clientSocket.send(sendPacket);
             clientSocket.close();
         } catch (Exception e) {
