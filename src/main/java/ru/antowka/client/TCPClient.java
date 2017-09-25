@@ -39,7 +39,7 @@ public class TCPClient {
                 System.out.println(in.readLine());
 
                 try {
-                    Thread.sleep(3000);                 //3 sec
+                    Thread.sleep(10000);                 //10 sec
                 } catch(InterruptedException ex) {
                     Thread.currentThread().interrupt();
                 }
